@@ -1,0 +1,9 @@
+1. Use the following dataset to predict the price of houses: https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data
+
+2. The dataset contains 81 columns. 80 of them are the attributes (either numeric or non-numeric) and one is the target (sale price). Therefore, before attempting any prediction algorithm, you need to reduce that massive number of potential input variables by selecting the most important ones. You may think also ways to “transform” the non-numeric variables to numeric. You need thus to apply suitable feature selection techniques for this task, but you need also to justify why you have selected specific variables for the prediction section, following the output you will get from feature selection process. Be aware, not all input variables need to be used. The final selected input variables will be used then as input variables to your next prediction models.
+
+3. Implementation of house pricing and comparison of 3 algorithms using a) a multilayer perceptron, b) partial least squares (PLS) regression and SVM (support vector machines). It is not expected that you will implement the algorithms from scratch but third party R/Python libraries should be used.
+
+4. Describe the implementation and results
+
+5. Create a zip file with all the source code implemented.

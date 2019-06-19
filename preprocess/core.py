@@ -154,7 +154,7 @@ def combine(dataFrame):
     #* Most land slopes are gentle; treat the others as "not gentle".
     all["IsLandSlopeGentle"] = (dataFrame["LandSlope"] == "Gtl") * 1
 
-    #* Most properties use standard circuit breakers.
+    #* Most properties use standard circuit breakers
     all["IsElectricalSBrkr"] = (dataFrame["Electrical"] == "SBrkr") * 1
 
     #* About 2/3rd have an attached garage.

@@ -27,3 +27,6 @@ def refactor(refactored_data_frame, data_frame, column, fill_na):
     refactored_data_frame = refactored_data_frame.join(dummies)
     refactored_data_frame = refactored_data_frame.drop([column], axis = 1)
     return refactored_data_frame
+
+def read_csv(filename):
+    return pd.read_csv(filename)

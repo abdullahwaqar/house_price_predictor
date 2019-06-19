@@ -1,13 +1,17 @@
+import numpy as np
+from sklearn import preprocessing
 from sklearn.neural_network import MLPClassifier
+from sklearn.preprocessing import LabelEncoder
+from .utils import rmse
 
 def mlp_classifier(train, test, label):
     lab_enc = preprocessing.LabelEncoder()
     training_encoded = lab_enc.fit_transform(label)
     mlp = MLPClassifier(activation='relu', alpha=1e-05, batch_size='auto',
               beta_1=0.9, beta_2=0.999, early_stopping=False,
-              epsilon=1e-08, hidden_layer_sizes=(5, 2),
+              epsilon=1e-08, hidden_layer_sizes=(6, 3),
               learning_rate='constant', learning_rate_init=0.001,
-              max_iter=200, momentum=0.9, n_iter_no_change=10,
+              max_iter=300, momentum=0.9, n_iter_no_change=10,
               nesterovs_momentum=True, power_t=0.5, random_state=1,
               shuffle=True, solver='lbfgs', tol=0.0001,
               validation_fraction=0.1, verbose=False, warm_start=False)

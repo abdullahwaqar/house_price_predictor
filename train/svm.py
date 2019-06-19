@@ -1,4 +1,8 @@
+import numpy as np
 from sklearn.svm import SVC
+from sklearn import preprocessing
+from sklearn.preprocessing import LabelEncoder
+from .utils import rmse
 
 def svm(train, test, label):
     lab_enc = preprocessing.LabelEncoder()

@@ -1,4 +1,3 @@
-import math
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -15,13 +14,4 @@ def plot_predictions(actual, prediction, title='Sales Price vs Prediction', y_la
 
     ax.set_title(title)
     ax.legend(loc='upper left')
-    plt.show()
-
-def scatter_plot(actual, prediction, title='Sales Price vs Prediction', y_label='Price USD', x_label='Number of Samples'):
-    print(np.amax(prediction))
-    plt.scatter(actual, actual['Id'], label='skitscat', color='k', s=25, marker="o")
-    plt.xlabel('x')
-    plt.ylabel('y')
-    plt.title('Interesting Graph\nCheck it out')
-    plt.legend()
     plt.show()
